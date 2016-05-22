@@ -9,6 +9,6 @@
     "node-rest-client" : "1.4.1"
   },
   "scripts": {
-    "start": "app.js"
+    "start": "node app.js"
   }
 }
