@@ -96,7 +96,9 @@ var handle_get = function (req, res) {
 app.post("*", handle_post );
 app.get( "*", handle_get ) ;
 
-console.log( "Server running on Port 8080..." ) ;
+var server = app.listen(process.env.PORT || 3000, function () {
+    console.log('Server listening at http://' + server.address().address + ':' + server.address().port);
+});
 
 //app.listen(8080);
 
